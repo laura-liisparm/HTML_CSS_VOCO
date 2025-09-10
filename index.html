@@ -4,28 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width-device-width, initial-scale=1.0" />
     <title>Veebileht</title>
-    <style>
-      img {
-        width: 100px;
-        border-radius: 50px;
-        float: left;
-        margin-right: 10px;
-      }
-      p.username {
-        font-weight: bold;
-      }
-    </style>
     <link rel="stylesheet" href="" integrity="" referrerpolicy="" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
     <a href="#content" class="skip-link">Liigu sisu juurde</a>
-    <header><h1>Õppeveeb</h1></header>
-    <img src="images/Brownie.jpg" alt="An image of Brownie" />
-    <p class="username">@lovelaurayy</p>
-    <main id="content"><p>I love to study software engineering!</p></main>
-    <footer>© 2025</footer>
-    git
+
+    <header>
+      <h1>Õppeveeb</h1>
+      <nav aria-label="Põhinavigatsioon">
+        <a href="#sissejuhatus">Sissejuhatus</a>
+        <a href="#teooria">Teooria</a>
+        <a href="#kokkuvõte">Kokkuvõte</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </header>
+
+    <main id="content">
+      <section id="sissejuhatus">
+        <h2>Sissejuhatus</h2>
+        <p>Mis on HTML?</p>
+        <p>
+          <strong>Hypertext Markup Language (HTML)</strong> on standardne
+          märgistuskeel dokumentidele, mis on loodud veebibrauseris kuvamiseks.
+          See määratleb veebisisu sisu ja struktuuri. Seda kasutatakse sageli
+          koos tehnoloogiatega, nagu
+          <strong>Cascading Style Sheets (CSS)</strong> ja skriptimiskeeled,
+          näiteks <strong>JavaScript</strong>.
+        </p>
+        <video controls width="640" height="360">
+          <source src="media/HelloWorld.mp4" type="video/mp4" />
+        </video>
+      </section>
+
+      <section id="teooria">
+        <h2>Teooria</h2>
+        <p>HTML tähendus.</p>
+      </section>
+
+      <section id="Kokkuvõte">
+        <h2>Kokkuvõte</h2>
+        <p>HTML Kasutus.</p>
+      </section>
+
+      <section id="kontakt">
+        <img
+          class="kassipilt"
+          src="images/Brownie.jpg"
+          alt="An image of my cat Brownie"
+        />
+        <p class="username">@lovelaurayy</p>
+        <p>I love to study software engineering!</p>
+      </section>
+    </main>
+
+    <footer></footer>
   </body>
 </html>
